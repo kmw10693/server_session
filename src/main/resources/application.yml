@@ -4,10 +4,6 @@ spring:
     group:
       local: "local"
       dev: "dev, datasource"
-    include:
-      - security
-      - openai
-
 
 cors-allowed-origins:
   https://team-play.netlify.app,
