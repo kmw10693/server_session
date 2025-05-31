@@ -16,13 +16,13 @@ public class MemberController {
     private final MemberRepository memberRepository;
 
     @GetMapping
-    @Operation(summary = "Get all members")
+    @Operation(summary = "Get all member2")
     public List<Member> findAll() {
         return memberRepository.findAll();
     }
 
     @GetMapping("/{id}")
-    @Operation(summary = "Find a member By Id")
+    @Operation(summary = "Find a member By Ids")
     public Member findById(@PathVariable Long id) {
         return memberRepository.findById(id).orElse(null);
     }
